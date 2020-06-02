@@ -1,0 +1,195 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #9BB1FF;
+    color: #3945AF;
+    box-sizing: border-box;
+    transition: all ease 0.3s;
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Sections */
+
+.card {
+    position: relative;
+    background: #E5FEFF;
+    padding: 10px 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 15px 20px 0;
+}
+
+/* Heading Primary */
+.heading-pri {
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 40px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.heading-pri::after {
+    content: '';
+    width: 20%;
+    height: 8px;
+    top: 100%;
+    left: 0;
+    background-color: #9BB1FF;
+    position: absolute;
+}
+
+/* Button Start */
+.btn {
+
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: unset;
+    border: 3px solid #3945AF;
+    background-color: #9BB1FF;
+    color: #3945AF;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
+    transition: all ease 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #9BB1FF;
+    background-color: #3945AF;
+    border-color: #9BB1FF;
+
+}
+
+.btn:active {
+    color: #E5FEFF;
+}
+
+/* Button End */
+
+/* Header Start */
+
+/* Nav Start */
+.header .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Nav Logo */
+.header .nav .logo-ele .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Exo', sans-serif;
+}
+
+/* Nav Links Start */
+.header .nav .nav-ele a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+
+.header .nav .nav-ele a:hover {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #9BB1FF;
+}
+
+.header .nav .nav-ele a:focus,
+.header .nav .nav-ele a:active {
+    color: #E5FEFF;
+    background-color: #3945AF;
+    border-radius: 15px;
+}
+
+
+.header .nav .nav-ele #home {
+    color: #E5FEFF;
+    background-color: #3945AF;
+    border-radius: 15px;
+}
+
+/* Nav Links End */
+/* Nav End */
+/* Header End */
+
+/* Intro Section  Start*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Intro Heading */
+.intro .intro-heading {
+    margin: 100px 0 0;
+}
+
+/* Intro Para */
+.intro .intro-para {
+    margin: 50px 0 0;
+    max-width: 30%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.intro .intro-para .special {
+    color: #3945AF;
+}
+
+/* Intro Button */
+.intro .intro-grow-btn {
+    margin: 30px 0 0;
+}
+
+/* Intro Social Icon */
+.intro .intro-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0 20px;
+    min-width: 22%;
+}
+
+
+/*  Intro Social Icon Link */
+
+.intro .intro-social .icon {
+    background-color: #3945AF;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/* Intro Section  Start*/
