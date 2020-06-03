@@ -7,8 +7,9 @@ body {
     background-color: #9BB1FF;
     color: #3945AF;
     box-sizing: border-box;
-    transition: all ease 0.3s;
+    transition: all ease 0.4s;
 
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -19,17 +20,25 @@ li {
 a {
     color: inherit;
     text-decoration: none;
+    outline: none;
 }
 
 /* Sections */
-
 .card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #E5FEFF;
-    padding: 10px 30px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin: 15px 20px 0;
+    padding: 30px;
+}
+
+.card:target {
+    background-color: green;
 }
 
 /* Heading Primary */
@@ -39,6 +48,7 @@ a {
     margin: 40px 0 0;
     padding: 0;
     position: relative;
+    text-align: center;
 }
 
 .heading-pri::after {
@@ -50,6 +60,15 @@ a {
     background-color: #9BB1FF;
     position: absolute;
 }
+
+/*  Para Styling */
+.para-pri {
+    margin: 50px 0 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+}
+
 
 /* Button Start */
 .btn {
@@ -65,26 +84,36 @@ a {
     background-color: #9BB1FF;
     color: #3945AF;
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
-    transition: all ease 0.3s;
+    transition: all ease 0.4s;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
     color: #9BB1FF;
     background-color: #3945AF;
-    border-color: #9BB1FF;
 
 }
 
 .btn:active {
     color: #E5FEFF;
+    transform: scale(1.1);
+}
+
+.btn::-moz-focus-inner {
+    border: none;
 }
 
 /* Button End */
 
-/* Header Start */
 
+/* Header Start */
 /* Nav Start */
+.header {
+    display: block;
+    padding: 10px 30px;
+}
+
+
+
 .header .nav {
     display: flex;
     flex-direction: row;
@@ -92,6 +121,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 
 
 /* Nav Logo */
@@ -107,7 +137,7 @@ a {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 15px;
-    transition: all ease 0.3s;
+    transition: all ease 0.4s;
 }
 
 .header .nav .nav-ele a:hover {
@@ -134,27 +164,12 @@ a {
 /* Nav End */
 /* Header End */
 
+
 /* Intro Section  Start*/
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Intro Heading */
-.intro .intro-heading {
-    margin: 100px 0 0;
-}
 
 /* Intro Para */
 .intro .intro-para {
-    margin: 50px 0 0;
     max-width: 30%;
-    text-align: center;
-    font-size: 1.4rem;
-    color: black;
 }
 
 .intro .intro-para .special {
@@ -173,23 +188,147 @@ a {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 70px 0 20px;
-    min-width: 22%;
+    margin: 50px 0 0;
+    /* min-width: 22%; */
 }
 
 
 /*  Intro Social Icon Link */
 
+
 .intro .intro-social .icon {
     background-color: #3945AF;
-    color: #fff;
+    color: #9BB1FF;
     font-size: 2rem;
     border-radius: 10px;
     height: 60px;
     width: 60px;
     text-align: center;
     line-height: 60px;
+    transition: all ease 0.4s;
+    margin-left: 10px;
+}
+
+.intro .intro-social .icon:hover {
+    transform: scale(1.1) translateY(-20px);
+    color: #3945AF;
+    background-color: #9BB1FF;
+}
+
+.intro .intro-social .icon:active {
+    transform: scale(1.2) translateY(-20px);
+}
+
+/* Intro Section  End*/
+
+
+/* About Section Start */
+.about .about-para {
+    max-width: 60%;
+}
+
+/* About Section End */
+
+
+/* Speciality Section */
+.speciality .speciality-para {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+}
+
+.speciality .speciality-para .content {
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Footer Start */
+
+.footer {
+    background-color: #3945AF;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+
 }
 
 
-/* Intro Section  Start*/
+.footer>p {
+    color: #E5FEFF;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Footer End */
+
+
+@media only screen and (max-width:800px) and (min-width: 710px) {
+    .para-pri {
+        font-size: 1.2rem;
+    }
+
+    .intro .intro-para {
+        max-width: 50%;
+    }
+
+    .speciality .speciality-para,
+    .about .about-para {
+        max-width: 80%;
+    }
+}
+
+
+@media only screen and (max-width:709px) {
+
+    .card {
+        padding: auto 15px;
+    }
+
+    .header .nav .logo-ele .logo {
+        font-size: 3rem;
+
+    }
+
+    .header .nav {
+        flex-direction: column;
+    }
+
+    .header .nav-ele {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading-pri {
+        font-size: 3rem;
+        text-align: start;
+
+    }
+
+
+    .para-pri {
+        font-size: 1.1rem;
+    }
+
+    .intro .intro-para {
+        max-width: 100%;
+    }
+
+    .speciality .speciality-para,
+    .about .about-para {
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 20px 0;
+        font-size: 0.8rem;
+    }
+
+}
