@@ -8,15 +8,16 @@
         <link
             href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./fonts/ABeeZee/ABeeZee-Regular.ttf">
-        <script src="https://kit.fontawesome.com/fc4f562999.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <title>HeeZJee</title>
     </head>
 
     <body>
 
 
-        <div class="header card">
+
+        <div class="header card" data-aos="zoom-in-up" data-aos-delay="250">
             <nav class="nav-pri nav">
                 <div class="logo-ele">
                     <a href="#" class="logo">HeeZJee</a>
@@ -29,38 +30,79 @@
                 </div>
             </nav>
         </div>
-        <div class="intro card">
+        <div class="intro card" data-aos="zoom-in-up" data-aos-delay="250">
             <h1 class="intro-heading heading-pri">
                 Hafeez Ghanchi
             </h1>
 
-            <p class="intro-para" style="font-style: italic;">
+            <p class="intro-para para-pri" style="font-style: italic;">
                 “ A <span class='special'>Entrepreneur</span>, who can develop Web and Mobile Appilcation and solve
                 your problem.”
             </p>
 
-            <input class="intro-grow-btn btn" type="button" value=" Grow With Me">
+            <!-- <input class="intro-grow-btn btn" type="button" value=" Grow With Me"> -->
+            <form method="get" action="mailto:hafeezghanchi927@gmail.com">
+                <button class="intro-grow-btn btn" type="submit">Grow With Me</button>
+            </form>
 
             <div class="intro-social">
-                <a href="#" class="icon facebook">
-                    <!-- <img src="./images/facebook-f-brands.svg" alt="Facebook" width="16" title="Facebook"> -->
+                <a href="https://www.facebook.com/HeeZJee/" class="icon facebook" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="icon email">
-                    <!-- <img src="./images/at-solid.svg" alt="Email" width="25" title="Email"> -->
-                    <i class="fas fa-at"></i>
+                <a href=" https://wa.me/923402068353/" class="icon whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="#" class="icon phone">
-                    <!-- <img src="./images/phone-solid.svg" alt="Phone" width="25" title="Phone"> -->
+                <a href="tel:+923402068353" class="icon phone" target="_blank">
                     <i class="fas fa-phone"></i>
                 </a>
-                <a href="#" class="icon linkedin">
-                    <!-- <img src="./images/linkedin-in-brands.svg" alt="LinkedIn" width="25" title="LinkedIn"> -->
+                <a href="https://www.linkedin.com/in/heezjee/" class="icon linkedin" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
         </div>
 
+
+        <div class="about card" data-aos="zoom-in-up" data-aos-delay="250">
+            <h1 class="about-heading heading-pri">
+                About Me
+            </h1>
+            <p class="about-para para-pri">
+                Evaluation | design | development | deployment of additional technologies and automation for managed
+                services on the cloud. Actively participate in Sprint planning and execution. Proficient in Cutting Edge
+                Technologies, Multiple Languages, Frameworks, and Domains.
+            </p>
+        </div>
+
+        <div class="speciality card " data-aos="zoom-in-up" data-aos-delay="250">
+            <h1 class="about-heading heading-pri">Specialities</h1>
+            <p class="speciality-para para-pri">
+                <span class="content">React Native</span>
+                <span class="content">React</span>
+                <span class="content">Redux</span>
+                <span class="content">Amazon Web Services</span>
+                <span class="content">JavaScript</span>
+                <span class="content">HTML & CSS</span>
+                <span class="content">Kubernetes</span>
+                <span class="content">Docker</span>
+                <span class="content">Linux</span>
+                <span class="content">Python</span>
+                <span class="content">Git</span>
+                <span class="content">Github</span>
+                <span class="content">DevOps</span>
+                <span class="content">GitOps</span>
+                <span class="content">Scrum</span>
+            </p>
+        </div>
+
+        <div class="footer card">
+            <p>Copyright &commat; HeeZJee 2020. All Rights Reserved.</p>
+        </div>
+
+        <script src="https://kit.fontawesome.com/fc4f562999.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
