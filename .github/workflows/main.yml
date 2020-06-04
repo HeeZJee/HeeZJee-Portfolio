@@ -33,8 +33,8 @@ jobs:
       run: npm install -g surge
       
      # Runs a single command using the runners shell
-    - name: install 
-      run: surge ./ {{secrets.SURGE_DOMAIN}} --token 0153553da72415fc410b644d87001bbb 
+    - name: deploying on surge
+      run: surge ./ {{secrets.SURGE_DOMAIN}} --token {{secrets.SURGE_TOKEN}}
       
       
       
