@@ -1,0 +1,87 @@
+.contact-form {
+    margin-top: 30px;
+
+}
+
+
+.contact .contact-form tr>td {
+    position: relative;
+}
+
+.contact .contact-form tr>td>label {
+    display: inline-block;
+    background-color: #3945AF;
+    color: #E5FEFF;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact .contact-form tr>td label[for="message"] {
+    position: absolute;
+    top: 0;
+}
+
+.contact .contact-form tr>td>input,
+.contact .contact-form tr>td>textarea {
+    display: inline-block;
+    background-color: #9BB1FF;
+    border: none;
+    color: #E5FEFF;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #3945AF;
+    margin-top: 10px;
+    border: 2px solid #9BB1FF;
+    resize: none;
+    overflow-y: auto;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+
+
+
+
+.contact .contact-form tr>td>input:active,
+.contact .contact-form tr>td>textarea:active,
+.contact .contact-form tr>td>input:focus,
+.contact .contact-form tr>td>textarea:focus {
+    border: 2px solid #3945AF;
+}
+
+.contact .contact-form tr>td>button {
+    position: relative;
+    left: 75%;
+    top: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .contact .contact-form tr>td {
+        display: block;
+    }
+
+    .contact .contact-form tr>td>input,
+    .contact .contact-form tr>td>textarea {
+        width: auto;
+
+    }
+
+    .contact .contact-form tr>td>label {
+        background-color: transparent;
+        color: #3945AF;
+        padding: 0;
+        text-align: start;
+    }
+
+    .contact .contact-form tr>td label[for="message"] {
+        position: relative;
+    }
+
+    .contact .contact-form tr>td>button {
+        position: relative;
+        left: 55%;
+    }
+}
