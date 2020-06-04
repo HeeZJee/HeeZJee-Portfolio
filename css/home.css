@@ -1,170 +1,3 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Exo', sans-serif;
-    font-family: 'ABeeZee', sans-serif;
-    background-color: #9BB1FF;
-    color: #3945AF;
-    box-sizing: border-box;
-    transition: all ease 0.4s;
-
-    scroll-behavior: smooth;
-}
-
-ul,
-li {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
-}
-
-/* Sections */
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #E5FEFF;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    margin: 15px 20px 0;
-    padding: 30px;
-}
-
-.card:target {
-    background-color: green;
-}
-
-/* Heading Primary */
-.heading-pri {
-    font-size: 4rem;
-    font-weight: normal;
-    margin: 40px 0 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-}
-
-.heading-pri::after {
-    content: '';
-    width: 20%;
-    height: 8px;
-    top: 100%;
-    left: 0;
-    background-color: #9BB1FF;
-    position: absolute;
-}
-
-/*  Para Styling */
-.para-pri {
-    margin: 50px 0 0;
-    text-align: center;
-    font-size: 1.4rem;
-    color: black;
-}
-
-
-/* Button Start */
-.btn {
-
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: unset;
-    border: 3px solid #3945AF;
-    background-color: #9BB1FF;
-    color: #3945AF;
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
-    transition: all ease 0.4s;
-}
-
-.btn:hover {
-    color: #9BB1FF;
-    background-color: #3945AF;
-
-}
-
-.btn:active {
-    color: #E5FEFF;
-    transform: scale(1.1);
-}
-
-.btn::-moz-focus-inner {
-    border: none;
-}
-
-/* Button End */
-
-
-/* Header Start */
-/* Nav Start */
-.header {
-    display: block;
-    padding: 10px 30px;
-}
-
-
-
-.header .nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-/* Nav Logo */
-.header .nav .logo-ele .logo {
-    font-size: 2rem;
-    font-weight: 800;
-    font-family: 'Exo', sans-serif;
-}
-
-/* Nav Links Start */
-.header .nav .nav-ele a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 15px;
-    transition: all ease 0.4s;
-}
-
-.header .nav .nav-ele a:hover {
-    font-size: 1.2rem;
-    font-weight: 600;
-    background-color: #9BB1FF;
-}
-
-.header .nav .nav-ele a:focus,
-.header .nav .nav-ele a:active {
-    color: #E5FEFF;
-    background-color: #3945AF;
-    border-radius: 15px;
-}
-
-
-.header .nav .nav-ele #home {
-    color: #E5FEFF;
-    background-color: #3945AF;
-    border-radius: 15px;
-}
-
-/* Nav Links End */
-/* Nav End */
-/* Header End */
-
-
 /* Intro Section  Start*/
 
 /* Intro Para */
@@ -248,75 +81,17 @@ a {
     border-radius: 10px;
 }
 
-/* Footer Start */
-
-.footer {
-    background-color: #3945AF;
-    margin-bottom: 15px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px 30px;
-
-}
-
-
-.footer>p {
-    color: #E5FEFF;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* Footer End */
-
 
 @media only screen and (max-width:800px) and (min-width: 710px) {
     .para-pri {
         font-size: 1.2rem;
     }
 
-    .intro .intro-para {
-        max-width: 50%;
-    }
-
-    .speciality .speciality-para,
-    .about .about-para {
-        max-width: 80%;
-    }
 }
 
 
 @media only screen and (max-width:709px) {
 
-    .card {
-        padding: auto 15px;
-    }
-
-    .header .nav .logo-ele .logo {
-        font-size: 3rem;
-
-    }
-
-    .header .nav {
-        flex-direction: column;
-    }
-
-    .header .nav-ele {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .heading-pri {
-        font-size: 3rem;
-        text-align: start;
-
-    }
-
-
-    .para-pri {
-        font-size: 1.1rem;
-    }
-
     .intro .intro-para {
         max-width: 100%;
     }
@@ -324,11 +99,6 @@ a {
     .speciality .speciality-para,
     .about .about-para {
         max-width: 100%;
-    }
-
-    .footer {
-        padding: 20px 0;
-        font-size: 0.8rem;
     }
 
 }
