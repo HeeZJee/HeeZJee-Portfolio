@@ -1,0 +1,104 @@
+/* Intro Section  Start*/
+
+/* Intro Para */
+.intro .intro-para {
+    max-width: 30%;
+}
+
+.intro .intro-para .special {
+    color: #3945AF;
+}
+
+/* Intro Button */
+.intro .intro-grow-btn {
+    margin: 30px 0 0;
+}
+
+/* Intro Social Icon */
+.intro .intro-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 0;
+    /* min-width: 22%; */
+}
+
+
+/*  Intro Social Icon Link */
+
+
+.intro .intro-social .icon {
+    background-color: #3945AF;
+    color: #9BB1FF;
+    font-size: 2rem;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    transition: all ease 0.4s;
+    margin-left: 10px;
+}
+
+.intro .intro-social .icon:hover {
+    transform: scale(1.1) translateY(-20px);
+    color: #3945AF;
+    background-color: #9BB1FF;
+}
+
+.intro .intro-social .icon:active {
+    transform: scale(1.2) translateY(-20px);
+}
+
+/* Intro Section  End*/
+
+
+/* About Section Start */
+.about .about-para {
+    max-width: 60%;
+}
+
+/* About Section End */
+
+
+/* Speciality Section */
+.speciality .speciality-para {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+}
+
+.speciality .speciality-para .content {
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:800px) and (min-width: 710px) {
+    .para-pri {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media only screen and (max-width:709px) {
+
+    .intro .intro-para {
+        max-width: 100%;
+    }
+
+    .speciality .speciality-para,
+    .about .about-para {
+        max-width: 100%;
+    }
+
+}
