@@ -31,14 +31,16 @@ jobs:
     # Runs a single command using the runners shell
     - name: install surge
       run: npm install -g surge
+    
+     # Runs a single command using the runners shell
+    - name: install firebase
+      run: npm install -g firebase-tools
       
      # Runs a single command using the runners shell
     - name: deploying on surge
       run: surge ./ ${{secrets.SURGE_DOMAIN}} --token ${{secrets.SURGE_TOKEN}}
           
-      # Runs a single command using the runners shell
-    - name: install firebase
-      run: npm install -g firebase-tools
+     
       
      # Runs a single command using the runners shell
     - name: deploy on firebase
